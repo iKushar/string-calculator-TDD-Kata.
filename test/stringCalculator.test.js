@@ -23,4 +23,7 @@ describe('String Calculator', () => {
     it('handle custom delimiters', () => {
         expect(Add("//;\n1;2")).to.equal(3);
     });
+    it('delimiters of any length ', () => {
+        expect(Add("//[***]\n1***2***3")).to.equal(6);
+    });
 });
