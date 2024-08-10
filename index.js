@@ -9,7 +9,7 @@ export function Add(numbers) {
     let negatives = []
     for(let i=0; i < nums.length; i++ ){
         let num = parseInt(nums[i])
-        if(!isNaN(num)){
+        if(!isNaN(num) && num <= 1000){
             if(num < 0){
                 negatives.push(num)
             }else{
