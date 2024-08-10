@@ -20,4 +20,7 @@ describe('String Calculator', () => {
     it('ignore numbers greater than 1000', () => {
         expect(Add("2,3,1001")).to.equal(5);
     });
+    it('handle custom delimiters', () => {
+        expect(Add("//;\n1;2")).to.equal(3);
+    });
 });
