@@ -6,11 +6,20 @@ export function Add(numbers) {
 
     let nums = numbers.split(delimiter);
     let sum = 0;
+    let negatives = []
     for(let i=0; i < nums.length; i++ ){
         let num = parseInt(nums[i])
         if(!isNaN(num)){
-            sum = sum + num
+            if(num < 0){
+                negatives.push(num)
+            }else{
+                sum = sum + num
+            }
+            
         }
+    }
+    if (negatives.length > 0) {
+        throw new Error(`Negatives not allowed: ${negatives.join(", ")}`);
     }
     return sum
 }

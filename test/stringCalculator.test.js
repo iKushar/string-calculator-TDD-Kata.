@@ -14,4 +14,7 @@ describe('String Calculator', () => {
     it("sum of numbers having newlines between numbers '1\\n2,3'", () => {
         expect(Add("1\n2,3")).to.equal(6);
     });
+    it('handle negative numbers "1,-2,3"', () => {
+        expect(() => Add("1,-2,3")).to.throw("Negatives not allowed: -2");
+    });
 });
