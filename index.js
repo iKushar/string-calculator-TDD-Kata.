@@ -4,7 +4,7 @@ export function Add(numbers) {
     // delimiter with comma or newline and  handle multiple numbers with comma separated or \n
     let delimiter = /,|\n/;
 
-    //handle custom delimiters
+    //handle custom and any length delimiters
     if (numbers.startsWith("//")) {
         const delimiterEnd = numbers.indexOf("\n");
         delimiter = numbers.substring(2, delimiterEnd);
