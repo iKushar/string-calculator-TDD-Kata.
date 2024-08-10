@@ -1,0 +1,23 @@
+{
+  "name": "string-calculator-tdd-kata.",
+  "version": "1.0.0",
+  "description": "String Calculator tdd kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iKushar/string-calculator-TDD-Kata..git"
+  },
+  "author": "ikhwan kushar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iKushar/string-calculator-TDD-Kata./issues"
+  },
+  "homepage": "https://github.com/iKushar/string-calculator-TDD-Kata.#readme",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3"
+  }
+}
