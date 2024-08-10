@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "String Calculator tdd kata",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "mocha"
   },
